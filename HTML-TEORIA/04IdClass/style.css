@@ -1,0 +1,21 @@
+.div1 {
+color:blue;
+background-color: yellow;
+padding: 20px;
+margin: 10px;
+}
+
+.div2{
+    color:yellow;
+    background-color: blue;
+    padding: 20px;
+    margin: 10px;
+
+}
+
+#div3 {
+    color:rgb(28, 221, 255);
+    background-color: rgb(235, 48, 48);
+    padding: 20px;
+    margin: 10px;
+}
