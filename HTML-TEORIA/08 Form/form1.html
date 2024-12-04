@@ -9,18 +9,54 @@
 
 <body>
     <form id="form1" action="result.html" targer="_self" method="GET">
-        <div>
-            <label for="name">Name:</label>
-            <input type="text" id="name" placeholder="Enter your name" />
-        </div>
-        <div>
-            <label for="surname">Surname:</label>
-            <input type="text" id="surname" />
-        </div>
-        <div>
-            <label for="age">Age:</label>
-            <input type="number" id="age" />
-        </div>
+        <fieldset>
+            <legend>Personal Data</legend>
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your name" />
+            </div>
+            <div>
+                <label for="surname">Surname:</label>
+                <input type="text" name="surname" id="lname" placeholder="Enter last lastname" />
+            </div>
+            <div>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" placeholder="Enter your age" />
+            </div>
+
+        </fieldset>
+        <fieldset>
+            <legend>Other Data</legend>
+            <div>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required minlength="4" maxlength="6" />
+            </div>
+            <div>
+                <label for="description">Description:</label><br />
+                <textarea id="description" cols="10" rows="20"></textarea>
+            </div>
+            <div>
+                <label for="gender">Gender:</label><br />
+                <input type="radio" id="female" name="gender" value="female" checked />
+                <label for="female">Female </label><br />
+                <input type="radio" id="male" name="gender" value="male" />
+                <label for="male">Male </label><br />
+                <input type="radio" id="other" name="gender" value="other" />
+                <label for="other">Other </label><br />
+            </div>
+
+            <div>
+                <label for="file">Select an image:</label>
+                <input type="file" id="file" name="file" accept="image/png, image/jpeg" required />
+                <br /><br />
+                <label for="file_multiple">Select images:</label>
+                <input type="file" id="file_multiple" name="file_multiple" 
+                       accept="image/*" multiple /><br /><br />
+                <input type="submit" value="Submit" />
+        
+            </div>
+        </fieldset>
+
         <div>
 
             <input type="submit" name="SEND" value="SEND" />

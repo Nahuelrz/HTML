@@ -1,0 +1,20 @@
+h1{
+    text-align: center;
+} 
+#dades { 
+    background-color: aqua;
+
+}
+legend {
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 1px;
+    border-spacing: 10px;
+    background-color: white;
+}
+#forma {
+    background-color: aquamarine;
+}
+#documents {
+    background-color: azure
+}
