@@ -17,19 +17,19 @@
             <table>
                 <tr>
                     <td><label for="nom">Nom:</label><br />
-                        <input type="text" name="nom" id="nom" placeholder="Enter your nom" />
+                        <input type="text" name="nom" id="nom" required  placeholder="Enter your nom" />
                     </td>
                     <td><label for="cognom">Cognom:</label><br />
-                        <input type="text" name="cognom" id="cognom" placeholder="Enter your cognom" />
+                        <input type="text" name="cognom" id="cognom" placeholder="Enter your cognom" required />
                     </td>
                     <td> <label for="dni">DNI:</label><br />
                         <input type="text" name="dni" id="dni" placeholder="Enter your DNI"
-                            pattern="[0-9]{8}[A-HJ-NP-TV-Za-hj-np-tv-z]" maxlength="8" />
+                            pattern="[0-9]{8}[A-HJ-NP-TV-Za-hj-np-tv-z]" maxlength="9" required />
                     </td>
                 </tr>
                 <tr>
                     <td><label for="localitat">Localitat de Naixement:</label><br />
-                        <input type="text" name="localitat" id="localitat" placeholder="Enter your localitat" min="1900/01/01" max="01/01/2023"/>
+                        <input type="text" name="localitat" id="localitat" required placeholder="Enter your localitat"/>
                     </td>
                     <td><label for="provincia">Provincia:</label><br />
                         <select name="provincia">
@@ -85,22 +85,22 @@
                             <option value="vizcaya">Vizcaya</option>
                             <option value="zamora">Zamora</option>
                             <option value="zaragoza">Zaragoza</option>
-                            <input name="provincia" id="provincia" placeholder="--select a opcion--" />
+                            <input name="provincia" id="provincia" required  placeholder="--select a opcion--" />
                         </select>
                     </td>
                     <td> <label for="data">Data de Naixement:</label><br />
-                        <input type="date" name="data" id="data" placeholder="Enter your DNI" />
+                        <input type="date" name="data" id="data" required placeholder="Enter your date" min="1999-01-01" max="2023-01-01"/>
                     </td>
                 </tr>
                 <tr>
                     <td>
                         <label for="direcció">Direcció:</label><br />
-                        <input type="text" name="nom" id="nom" placeholder="Enter your direcció" />
+                        <input type="text" name="nom" id="nom" required placeholder="Enter your direcció" />
                     </td>
 
                     <td>
                         <label for="codi">Codi Postal:</label><br />
-                        <input type="text" name="codi" id="codi" placeholder="Enter your codi postal" />
+                        <input type="text" name="codi" id="codi" required placeholder="Enter your codi postal" minlength="5" maxlength="5" />
 
                     </td>
                 </tr>
