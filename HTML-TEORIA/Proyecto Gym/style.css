@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lora:ital,wght@0,400..700;1,400..700&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Tangerine:wght@400;700&display=swap');
+
+
+:root {
+    --text-color-background-footer: rgb(52, 48, 48);
+    --text-on-dark-background: rgb(255, 255, 255);
+    --contrast-color: #e50084;
+    --light-contrast-color: rgb(250, 233, 244);
+    --body-background-color: rgb(247, 247, 247);
+    --gray-text-color: rgb(158, 157, 171);
+    --font-text: 'Lato', sans-serif;
+    --font-headers: 'Noto Serif', sans-serif;
+}
+
+* {
+    font-family: var(--font-text);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+
+.nav-flex {
+    display: flex;
+    gap: 10px;
+    font-family: var(--font-headers);
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+p {
+    color: var(--text-color-background-footer);
+    /*font-size 1rem;*/
+}
+nav a {
+    padding-top: 8px;
+}
+a{
+    color:var(--contrast-color);
+    text-decoration: none;
+}
+a:hover{
+color: black;
+}
+.client-hover:hover{
+transition: 0.3s;
+filter: brightness(0);
+}
+.client-hover {
+    height: 1.8rem;
+    padding-top: 3px;
+    padding-right: 20px;
+}
+.logo {
+    height: 2.8rem;
+    padding-left: 30px;
+    padding-top: 8px;
+}
